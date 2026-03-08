@@ -411,17 +411,20 @@ p {
     z-index: 1;
 }
 
-/* Hero slide backgrounds - Filipino Construction & Philippine Designs */
+/* Hero slide backgrounds - Telco Towers & Filipino Construction */
 .hero-slide-1 {
-    background: url('https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80') center/cover no-repeat;
+    /* Telco/Cell Tower construction */
 }
 
 .hero-slide-2 {
-    background: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=1920&q=80') center/cover no-repeat;
+    /* Modern tropical Filipino home */
 }
 
 .hero-slide-3 {
-    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80') center/cover no-repeat;
+    /* Construction workers building */
 }
 
 .hero-content {
@@ -526,7 +529,8 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80') center/cover no-repeat;
+    /* Telco Tower background */
     opacity: 0.1;
 }
 
@@ -1237,21 +1241,25 @@ p {
     background: linear-gradient(135deg, rgba(10, 15, 20, 0.9) 0%, rgba(26, 45, 66, 0.8) 100%);
 }
 
-/* Page banners - Filipino Construction Workers & Philippine Designs */
+/* Page banners - Telco Towers & Filipino Construction */
 .page-banner-about {
-    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80') center/cover no-repeat;
+    /* Filipino construction team */
 }
 
 .page-banner-services {
-    background: url('https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80') center/cover no-repeat;
+    /* Telco tower construction */
 }
 
 .page-banner-projects {
-    background: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80') center/cover no-repeat;
+    /* Blueprint/Design background */
 }
 
 .page-banner-contact {
-    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80') center/cover no-repeat;
+    /* Filipino workers */
 }
 
 .page-banner-content {
