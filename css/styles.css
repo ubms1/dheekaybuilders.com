@@ -413,18 +413,18 @@ p {
 
 /* Hero slide backgrounds - Telco Towers & Filipino Construction */
 .hero-slide-1 {
-    background: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80') center/cover no-repeat;
-    /* Telco/Cell Tower construction */
+    background: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1920&q=80') center/cover no-repeat;
+    /* Telecommunications tower */
 }
 
 .hero-slide-2 {
-    background: url('https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=1920&q=80') center/cover no-repeat;
-    /* Modern tropical Filipino home */
+    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat;
+    /* Modern building construction */
 }
 
 .hero-slide-3 {
-    background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80') center/cover no-repeat;
-    /* Construction workers building */
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover no-repeat;
+    /* Construction site workers */
 }
 
 .hero-content {
@@ -529,7 +529,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1920&q=80') center/cover no-repeat;
     /* Telco Tower background */
     opacity: 0.1;
 }
@@ -643,10 +643,11 @@ p {
     font-size: 0.9375rem;
 }
 
-    border-radius: 12px;
-    box-shadow: var(--shadow-lg);
 .about-preview-image {
     position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .about-preview-image img {
@@ -823,19 +824,19 @@ p {
 }
 
 .why-item {
-    display: flex;25px;
+    display: flex;
+    gap: 20px;
     padding: 25px;
     background: var(--light-gray);
     transition: var(--transition);
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .why-item:hover {
     background: var(--primary-color);
     transform: translateX(10px);
-    box-shadow: var(--shadow
-    background: var(--primary-color);
-    transform: translateX(10px);
+    box-shadow: var(--shadow);
 }
 
 .why-item:hover .why-icon i {
@@ -870,12 +871,13 @@ p {
     color: var(--text-light);
     margin-bottom: 0;
     transition: var(--transition);
-    border-radius: 12px;
-    box-shadow: var(--shadow-lg);
 }
 
 .why-image {
     position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .why-image img {
@@ -1064,11 +1066,22 @@ p {
 }
 
 /* ============================================
-   FOOTER
+   FOOTER - Enhanced Professional Design
    ============================================ */
 .footer {
-    background: var(--dark-color);
-    padding: 80px 0 0;
+    background: linear-gradient(180deg, var(--primary-dark) 0%, var(--dark-color) 100%);
+    padding: 100px 0 0;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--secondary-color));
 }
 
 .footer-grid {
@@ -1082,17 +1095,20 @@ p {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     margin-bottom: 25px;
 }
 
 .footer-logo i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
+    background: rgba(212, 168, 75, 0.1);
+    padding: 15px;
+    border-radius: 12px;
 }
 
 .footer-logo span {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: 700;
     color: var(--white);
     letter-spacing: 1px;
@@ -1106,23 +1122,29 @@ p {
 
 .footer-social {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .footer-social a {
-    width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.1);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
+    font-size: 1.125rem;
     transition: var(--transition);
 }
 
 .footer-social a:hover {
     background: var(--secondary-color);
+    border-color: var(--secondary-color);
     color: var(--primary-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
 }
 
 .footer-links h4,
@@ -1912,7 +1934,13 @@ p {
     color: var(--secondary-color);
 }
 
-.faq-section .section-title {auto-fill, minmax(400px, 1fr));
+.faq-section .section-title {
+    color: var(--white);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
     max-width: none;
 }
@@ -1927,13 +1955,7 @@ p {
 
 .faq-card:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: translateX(5px
-}
-
-.faq-card {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid var(--secondary-color);
+    transform: translateX(5px);
 }
 
 .faq-card h3 {
@@ -2041,7 +2063,7 @@ p {
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS - Professional Scroll Effects
    ============================================ */
 .fade-in {
     opacity: 0;
@@ -2052,6 +2074,79 @@ p {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger animation delays */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+.stagger-6 { transition-delay: 0.6s; }
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.pulse-hover:hover {
+    animation: pulse 0.5s ease;
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* Float animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
 }
 
 /* ============================================
@@ -2221,17 +2316,12 @@ p {
     
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 40px
-        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
-    
-    .values-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }section-header {
+}
+
+@media (max-width: 768px) {
+    .section-header {
         padding-left: 20px;
         margin-bottom: 50px;
     }
@@ -2309,17 +2399,10 @@ p {
     }
     
     .service-detailed-image img {
-        height: 30olumns: 1fr;
-        gap: 40px;
+        height: 300px;
     }
     
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .form-row {
-     faq-grid {
+    .faq-grid {
         grid-template-columns: 1fr;
     }
     
@@ -2345,7 +2428,11 @@ p {
     }
     
     .gallery-item {
-        height: 25 576px) {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
     .hero-content h1 {
         font-size: 1.875rem;
     }
