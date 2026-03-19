@@ -196,6 +196,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; color: var(--text-
     font-weight: 600;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
